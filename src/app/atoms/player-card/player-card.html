@@ -1,0 +1,13 @@
+<div class="player-card">
+  <img src="/NQ.jpg" [alt]="player.name" class="player-photo"/>
+  <section>
+    <p class="player-name">{{ player.name }}</p>
+    <p class="player-team">{{ player.team }}</p>
+    <p class="player-stats">
+      {{ player.position }}: {{ player.goals }}-{{ player.assists }}-{{
+        player.goals + player.assists
+      }}
+      in {{ player.games_played }}gp
+    </p>
+  </section>
+</div>

@@ -1,0 +1,37 @@
+.player-card {
+    border: 1px solid black;
+    border-radius: 8px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: fit-content;
+    max-width: 300px;
+    background-color: #f8f9fa;
+    font-family: Verdana, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.player-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.player-name {
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.player-team {
+    margin: 0;
+}
+
+.player-stats {
+    margin: 0;
+}
