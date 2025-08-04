@@ -1,0 +1,7 @@
+<div cdkDropList [cdkDropListData]="players" class="example-list">
+  @for (item of players; track item) {
+  <div class="example-box" cdkDrag>
+    <app-player-card [player]="players[0]"></app-player-card>
+  </div>
+  }
+</div>

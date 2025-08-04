@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Player } from '../../models/player';
 
 @Component({
@@ -11,7 +11,7 @@ export class PlayerCard {
 
   constructor() { }
 
-  player: Player = new Player(
+  @Input() player: Player = new Player(
     "Nathan Quinn",
     17,
     29,

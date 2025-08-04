@@ -1,15 +1,17 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterModule } from '@angular/router';
 import { App } from './app';
+import { PlayerCard } from './atoms/player-card/player-card';
 
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
-        RouterModule.forRoot([])
+        RouterModule.forRoot([]),
       ],
       declarations: [
-        App
+        App,
+        PlayerCard,
       ],
     }).compileComponents();
   });

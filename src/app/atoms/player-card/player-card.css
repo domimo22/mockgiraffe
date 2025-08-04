@@ -7,7 +7,7 @@
     padding-bottom: 0px;
     width: fit-content;
     max-width: 300px;
-    background-color: #f8f9fa;
+    background-color: #adcad6;
     font-family: Verdana, sans-serif;
     display: flex;
     flex-direction: row;
@@ -25,7 +25,8 @@
 
 .player-name {
     margin-bottom: 3%;
-    text-align: center;
+    font-weight: bold;
+    margin-top: 2%;
 }
 
 .player-team {
@@ -34,4 +35,5 @@
 
 .player-stats {
     margin: 0;
+    margin-bottom: 2%;
 }
