@@ -11,13 +11,5 @@ export class PlayerCard {
 
   constructor() { }
 
-  @Input() player: Player = new Player(
-    "Nathan Quinn",
-    17,
-    29,
-    54,
-    new Date(2007, 8, 29),
-    "Center",
-    "Quebec Remparts"
-  );
+  @Input() player!: Player;
 }

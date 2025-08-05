@@ -1,1 +1,7 @@
-
+.example-list {
+    background-color: #331e38;
+    width: 25%;
+    height: 100vw;
+    margin-top: 0px;
+    padding: 10px;
+}

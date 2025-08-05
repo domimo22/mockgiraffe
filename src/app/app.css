@@ -1,0 +1,10 @@
+h1 {
+    color: #ffc94c;
+    padding: 2%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header, footer {
+    background-color: #006e90;
+}

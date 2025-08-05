@@ -1,0 +1,19 @@
+<div>
+  <p>Vancouver Canucks</p>
+  <div
+    cdkDropList
+    [cdkDropListData]="teams"
+    class="example-list"
+    [cdkDropListEnterPredicate]="canEnter()"
+    (cdkDropListDropped)="drop($event)"
+    #listB="cdkDropList"
+    id="listB"
+    [cdkDropListConnectedTo]="['listA']">
+    <div
+      *ngFor="let item of teams; trackBy: trackByFn"
+      class="example-box"
+      cdkDrag>
+      <app-player-card [player]="item"></app-player-card>
+    </div>
+  </div>
+</div>

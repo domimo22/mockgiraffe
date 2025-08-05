@@ -6,12 +6,14 @@ import { App } from './app';
 import { PlayerCard } from './atoms/player-card/player-card';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { DragZone } from './atoms/drag-zone/drag-zone';
+import { TeamCard } from './atoms/team-card/team-card';
 
 @NgModule({
   declarations: [
     App,
     PlayerCard,
-    DragZone
+    DragZone,
+    TeamCard
   ],
   imports: [
     BrowserModule,

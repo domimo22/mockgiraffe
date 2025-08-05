@@ -1,19 +1,25 @@
 import { Component, Input } from '@angular/core';
-import { Player } from '../../models/player';
+import { Team } from '../../models/team';
 import {
   CdkDragDrop,
+  CdkDragEnter,
   moveItemInArray,
   transferArrayItem,
 } from '@angular/cdk/drag-drop';
+import { Player } from '../../models/player';
 
 @Component({
-  selector: 'app-drag-zone',
+  selector: 'app-team-card',
   standalone: false,
-  templateUrl: './drag-zone.html',
-  styleUrl: './drag-zone.css',
+  templateUrl: './team-card.html',
+  styleUrl: './team-card.css',
 })
-export class DragZone {
-  @Input() players: Player[] = [];
+export class TeamCard {
+  @Input() teams: Player[] = [];
+
+  canEnter = () => {
+    return () => this.teams.length === 0;
+  };
 
   drop(event: CdkDragDrop<Player[]>) {
     if (event.previousContainer === event.container) {
