@@ -10,6 +10,7 @@
     *ngFor="let item of players; trackBy: trackByFn"
     class="example-box"
     cdkDrag
+    [cdkDragData]="item"
   >
     <app-player-card [player]="item"></app-player-card>
   </div>

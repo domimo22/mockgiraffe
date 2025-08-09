@@ -26,6 +26,7 @@ export class TeamCard {
   };
 
   drop(event: CdkDragDrop<Player[]>) {
+    console.log(event.item.data);
     if (event.previousContainer === event.container) {
       moveItemInArray(
         event.container.data,
