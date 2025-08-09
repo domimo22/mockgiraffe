@@ -6,7 +6,7 @@
   (cdkDropListDropped)="drop($event)"
   id="listA"
   #listA="cdkDropList"
-  [cdkDropListConnectedTo]="['listB']"
+  [cdkDropListConnectedTo]="'listB'"
 >
   <div
     *ngFor="let item of players; trackBy: trackByFn"

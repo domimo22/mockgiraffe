@@ -16,6 +16,7 @@ import { Player } from '../../models/player';
 })
 export class TeamCard {
   @Input() teams: Player[] = [];
+  notOccupied: boolean = true;
 
   canEnter = () => {
     return () => this.teams.length === 0;
