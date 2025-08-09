@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DragZone } from './drag-zone';
+import { PlayerBoard } from './player-board';
 
-describe('DragZone', () => {
-  let component: DragZone;
-  let fixture: ComponentFixture<DragZone>;
+describe('PlayerBoard', () => {
+  let component: PlayerBoard;
+  let fixture: ComponentFixture<PlayerBoard>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [DragZone]
+      declarations: [PlayerBoard]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(DragZone);
+    fixture = TestBed.createComponent(PlayerBoard);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
