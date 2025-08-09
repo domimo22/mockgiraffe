@@ -15,11 +15,14 @@ import { Player } from '../../models/player';
   styleUrl: './team-card.css',
 })
 export class TeamCard {
-  @Input() teams: Player[] = [];
+  @Input() players: Player[] = [];
+  @Input() team: Team = new Team("");
+  @Input() pickNum: number = 1;
+  @Input() connectedLists: string[] = [];
   notOccupied: boolean = true;
 
   canEnter = () => {
-    return () => this.teams.length === 0;
+    return () => this.players.length === 0;
   };
 
   drop(event: CdkDragDrop<Player[]>) {

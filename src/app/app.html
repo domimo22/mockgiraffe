@@ -2,8 +2,8 @@
   <h1>mock giraffe</h1>
 </header>
 <body class="app-body">
-  <app-player-board [players]="players"></app-player-board>
-  <app-team-card [teams]="teams"></app-team-card>
+  <app-player-board [players]="players" [connectedLists]="getConnectedLists(false)"></app-player-board>
+  <app-team-board [connectedLists]="getConnectedLists(true)"></app-team-board>
 </body>
 <footer>
   <h1>no copyright hehe</h1>

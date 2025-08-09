@@ -1,24 +1,23 @@
 <div class="team-card">
-  <p class="pick-num">#1</p>
+  <p class="pick-num">#{{pickNum}}</p>
   <img src="/cnucks.png" class="team-photo">
-  <p class="team-name">Vancouver Canucks</p>
+  <p class="team-name">{{team.name}}</p>
   <div
     cdkDropList
-    [cdkDropListData]="teams"
+    [cdkDropListData]="players"
     class="example-list"
     [cdkDropListEnterPredicate]="canEnter()"
     (cdkDropListDropped)="drop($event)"
     (cdkDropListEntered)="notOccupied = false"
     (cdkDropListExited)="notOccupied = true"
-    #listB="cdkDropList"
-    id="listB"
-    [cdkDropListConnectedTo]="['listA']"
+    [id]="`pick${pickNum}`"
+    [cdkDropListConnectedTo]="connectedLists"
   >
-    @if(teams.length === 0 && notOccupied) {
+    @if(players.length === 0 && notOccupied) {
       <p class="empty-team">Drag player here!</p>
     } @else {
       <div
-      *ngFor="let item of teams; trackBy: trackByFn"
+      *ngFor="let item of players; trackBy: trackByFn"
       class="example-box"
       cdkDrag
     >

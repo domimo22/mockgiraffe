@@ -1,0 +1,5 @@
+<div>
+    @for (team of teams; track team; let i = $index) {
+  <app-team-card [team]="team" [pickNum]="i + 1" [connectedLists]="connectedLists"></app-team-card>
+    }
+</div>

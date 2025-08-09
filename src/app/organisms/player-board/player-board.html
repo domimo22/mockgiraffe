@@ -5,8 +5,7 @@
   cdkDropListSortingDisabled
   (cdkDropListDropped)="drop($event)"
   id="listA"
-  #listA="cdkDropList"
-  [cdkDropListConnectedTo]="'listB'">
+  [cdkDropListConnectedTo]="connectedLists">
   <div
     *ngFor="let item of players; trackBy: trackByFn"
     class="example-box"

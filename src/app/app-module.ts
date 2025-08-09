@@ -7,13 +7,15 @@ import { PlayerCard } from './molecules/player-card/player-card';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { TeamCard } from './molecules/team-card/team-card';
 import { PlayerBoard } from './organisms/player-board/player-board';
+import { TeamBoard } from './organisms/team-board/team-board';
 
 @NgModule({
   declarations: [
     App,
     PlayerCard,
     TeamCard,
-    PlayerBoard
+    PlayerBoard,
+    TeamBoard
   ],
   imports: [
     BrowserModule,

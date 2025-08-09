@@ -1,6 +1,7 @@
 .example-list {
     background-color: #331e38;
     width: fit-content;
+    min-width: 400px;
     height: 100vw;
     margin-top: 0px;
     padding: 10px;

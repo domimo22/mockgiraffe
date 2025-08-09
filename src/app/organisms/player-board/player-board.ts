@@ -11,6 +11,8 @@ import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/dr
 export class PlayerBoard {
   @Input() players: Player[] = [];
 
+  @Input() connectedLists: string[] = [];
+
   trackByFn(index: number, item: Player) {
     return item.id;
   }
