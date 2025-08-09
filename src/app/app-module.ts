@@ -3,10 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
-import { PlayerCard } from './atoms/player-card/player-card';
+import { PlayerCard } from './molecules/player-card/player-card';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { DragZone } from './atoms/drag-zone/drag-zone';
-import { TeamCard } from './atoms/team-card/team-card';
+import { TeamCard } from './molecules/team-card/team-card';
 
 @NgModule({
   declarations: [
